@@ -69,7 +69,7 @@ if a > b:
     tmp = b
     b = a
     a = tmp
-print(a, b, c)
+
 #3
 a = 14
 b = 8
