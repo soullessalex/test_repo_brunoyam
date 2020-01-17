@@ -39,3 +39,21 @@ add_value(9, root)
 add_value(11, root)
 add_value(14, root)
 print_tree(root)
+
+
+def find(value, current_node):
+    if current_node.value == value:
+        return True
+    if current_node.value > value:
+        if current_node.left is not None:
+            return find(value, current_node.left)
+        else:
+            return False
+    if current_node.value < value:
+        if current_node.left is not None:
+            return find(value, current_node.right)
+        else:
+            return False
+
+
+print(find(17, root))
