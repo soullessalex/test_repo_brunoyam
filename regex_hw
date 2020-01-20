@@ -1,0 +1,34 @@
+# ДЗ
+
+#1
+pattern = '<b> Определенный набор символов </b>'
+# print(re.sub(pattern, '<b>', '*'))
+res1 = re.sub('<b>', '*', pattern)
+res2 = re.sub('</b>', '*', res1)
+print(res2)
+
+
+
+
+#3
+pattern = 'Delivery took 2 hours?'
+if re.match('[A-Za-z]', pattern) and re.search('\d', pattern) and (re.search('\!', pattern) or re.search('\?', pattern)):
+    print(True)
+else:
+    print(False)
+
+#4
+
+pattern = 1100
+
+
+
+
+
+#5
+
+pattern = 'soullessalex@gmail.com'
+if re.search('\w+@\w+\.[A-Za-z]+', pattern):
+    print(True)
+else:
+    print(False)
